@@ -91,7 +91,6 @@ export default function Home() {
       setCDBalance(_cdBalance);
       setLPBalance(_lpBalance);
       setReservedCD(_reservedCD);
-      setReservedCD(_reservedCD);
       setEtherBalanceContract(_ethBalanceContract);
     } catch (err) {
       console.error(err);
@@ -315,7 +314,7 @@ export default function Home() {
       // Assign the Web3Modal class to the reference object by setting it's `current` value
       // The `current` value is persisted throughout as long as this page is open
       web3ModalRef.current = new Web3Modal({
-        network: "rinkeby",
+        network: "ropsten",
         providerOptions: {},
         disableInjectedProvider: false,
       });
